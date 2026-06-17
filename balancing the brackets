@@ -1,0 +1,11 @@
+def is_balanced_simple(bracket_string):
+    while "()" in bracket_string or "{}" in bracket_string or "[]" in bracket_string:
+        bracket_string = bracket_string.replace("()", "")
+        bracket_string = bracket_string.replace("{}", "")
+        bracket_string = bracket_string.replace("[]", "")
+    return len(bracket_string) == 0
+input_string = "{{}}{}()[][]"
+if is_balanced_simple(input_string):
+    print(f"The input '{input_string}' is Balanced")
+else:
+    print(f"The input '{input_string}' is Not Balanced")
