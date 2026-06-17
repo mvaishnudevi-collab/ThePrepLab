@@ -1,0 +1,25 @@
+def print_square_diamond(n):
+    # Total rows in the pattern
+    total_rows = 2 * n - 1
+    
+    for i in range(total_rows):
+        # Calculate distance from the middle row
+        dist_from_mid = abs(n - 1 - i)
+        
+        # Number of stars on each side
+        stars = dist_from_mid + 1
+        
+        # Number of spaces in the middle
+        spaces = 2 * (n - stars)
+        
+        # Print left stars
+        print("*" * stars, end="")
+        
+        # Print middle spaces
+        print(" " * spaces, end="")
+        
+        # Print right stars
+        print("*" * stars)
+
+# Example usage with n = 5
+print_square_diamond(5)
