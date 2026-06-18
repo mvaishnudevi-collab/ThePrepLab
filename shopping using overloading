@@ -1,0 +1,33 @@
+public class Main {
+    // 1. Purchase by product name only
+    public static void purchase(String name) {
+        System.out.println("Product: " + name);
+        System.out.println(); // Prints a blank line for readability
+    }
+
+    // 2. Purchase by product name and quantity
+    public static void purchase(String name, int quantity) {
+        System.out.println("Product: " + name);
+        System.out.println("Quantity: " + quantity);
+        System.out.println();
+    }
+
+    // 3. Purchase by product name, quantity, and discount code
+    public static void purchase(String name, int quantity, String discountCode) {
+        System.out.println("Product: " + name);
+        System.out.println("Quantity: " + quantity);
+        System.out.println("Discount Code: " + discountCode);
+        System.out.println();
+    }
+
+    public static void main(String[] args) {
+        // Test Case 1: Name only
+        purchase("Laptop");
+
+        // Test Case 2: Name and Quantity
+        purchase("Laptop", 2);
+
+        // Test Case 3: Name, Quantity, and Discount Code
+        purchase("Laptop", 2, "SAVE10");
+    }
+}
