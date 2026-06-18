@@ -1,0 +1,26 @@
+public class Main {
+    // Calculates Gross Salary: Basic + Allowance
+    public static double calculateGross(double basic, double allowance) {
+        return basic + allowance;
+    }
+
+    // Calculates Net Salary: Gross - Deduction
+    public static double calculateNet(double gross, double deduction) {
+        return gross - deduction;
+    }
+
+    public static void main(String[] args) {
+        // Sample Input
+        double basicSalary = 30000;
+        double allowance = 5000;
+        double deduction = 2000;
+
+        // Static methods called directly using the class name (no object creation)
+        double grossSalary = Main.calculateGross(basicSalary, allowance);
+        double netSalary = Main.calculateNet(grossSalary, deduction);
+
+        // Sample Output
+        System.out.println("Gross Salary = " + (int) grossSalary);
+        System.out.println("Net Salary = " + (int) netSalary);
+    }
+}
