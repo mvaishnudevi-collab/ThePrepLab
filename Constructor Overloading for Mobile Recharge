@@ -1,0 +1,35 @@
+public class Main {
+    private int amount;
+    private int validity;
+    private String dataPack;
+
+    public Main(int amount) {
+        this.amount = amount;
+        System.out.println("Recharge Amount: " + this.amount);
+        System.out.println();
+    }
+
+    public Main(int amount, int validity) {
+        this.amount = amount;
+        this.validity = validity;
+        System.out.println("Recharge Amount: " + this.amount);
+        System.out.println("Validity: " + this.validity + " Days");
+        System.out.println();
+    }
+
+    public Main(int amount, int validity, String dataPack) {
+        this.amount = amount;
+        this.validity = validity;
+        this.dataPack = dataPack;
+        System.out.println("Recharge Amount: " + this.amount);
+        System.out.println("Validity: " + this.validity + " Days");
+        System.out.println("Data Pack: " + this.dataPack);
+        System.out.println();
+    }
+
+    public static void main(String[] args) {
+        Main plan1 = new Main(199);
+        Main plan2 = new Main(299, 28);
+        Main plan3 = new Main(399, 56, "2GB/day");
+    }
+}
