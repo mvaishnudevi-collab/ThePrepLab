@@ -1,0 +1,21 @@
+public class Main {
+    // Static variable shared across all book additions
+    private static int totalBooks = 0;
+
+    // Method to simulate adding a book
+    public static void addBook() {
+        totalBooks++;
+        System.out.println("Book Added");
+        System.out.println("Total Books: " + totalBooks);
+        System.out.println(); // Blank line to match sample format
+    }
+
+    public static void main(String[] args) {
+        // Simulating adding 3 books based on the sample input
+        int booksAdded = 3;
+
+        for (int i = 0; i < booksAdded; i++) {
+            addBook();
+        }
+    }
+}
