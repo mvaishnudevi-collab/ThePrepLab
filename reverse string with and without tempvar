@@ -1,0 +1,7 @@
+a=input("enter the string:");
+print(a[::-1])
+b = input("enter the string: ")
+res = "" 
+for char in b:
+    res = char + res 
+print(res)
