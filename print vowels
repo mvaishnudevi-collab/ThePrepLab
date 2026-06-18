@@ -1,0 +1,8 @@
+a=input("enter the string:");
+b=['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
+res="";
+for i in a:
+    if i in b:
+        res=res+i;
+print(res);        
+    
