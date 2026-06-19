@@ -1,0 +1,10 @@
+n=int(input());
+max_length=(2*n)+1;
+print(" "*n+"0");
+for i in range(n,0,-1):
+    left="".join(str(x) for x in range(i,n+1))
+    right="".join(str(x) for x in range(n,i-1,-1))
+    row_text=left+"0"+right
+    spaces=(max_length-len(row_text))//2;
+    print(" "*spaces+row_text)
+    
